@@ -1,18 +1,21 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { HeaderGBComponent } from './header-gb/header-gb.component';
-import { FooterGBComponent } from './footer-gb/footer-gb.component';
-import { LoginGBComponent } from './login-gb/login-gb.component';
-import { InicioGBComponent } from './inicio-gb/inicio-gb.component';
-import { ContactoGBComponent } from './contacto-gb/contacto-gb.component';
-import { OfertasGBComponent } from './ofertas-gb/ofertas-gb.component';
-import { ProductosGBComponent } from './productos-gb/productos-gb.component';
+import { ServiciosComponent } from './servicios/servicios.component';
+import { PreciosOfertasComponent } from './precios-ofertas/precios-ofertas.component';
+import { ContactosComponent } from './contactos/contactos.component';
+import { LoginComponent } from './login/login.component';
+import { CrudComponent } from './sistema/crud/crud.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProductosGBComponent } from './productos/productos-gb.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontawesomeObject } from '@fortawesome/fontawesome-svg-core';
+
 
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -23,38 +26,40 @@ import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
-
-
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { landingComponent } from './Landing/landing.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderGBComponent,
-    FooterGBComponent,
-    LoginGBComponent,
-    InicioGBComponent,
-    ContactoGBComponent,
-    OfertasGBComponent,
+    landingComponent,
+    ServiciosComponent,
+    PreciosOfertasComponent,
+    ContactosComponent,
+    LoginComponent,
+    CrudComponent,
+    FooterComponent,
     ProductosGBComponent,
-
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
+    MatProgressSpinnerModule,
     FormsModule,
     ReactiveFormsModule,
-    MatProgressSpinnerModule,
     MatFormFieldModule,
     MatSnackBarModule,
-    MatInputModule,
     MatButtonModule,
+    MatInputModule,
     MatGridListModule,
     MatIconModule,
     MatCardModule,
-    
+    MatToolbarModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
