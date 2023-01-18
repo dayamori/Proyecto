@@ -1,17 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { landingComponent } from './Landing/landing.component';
-import { ServiciosComponent } from './servicios/servicios.component';
-import { PreciosOfertasComponent } from './precios-ofertas/precios-ofertas.component';
-import { ContactosComponent } from './contactos/contactos.component';
-import { CrudComponent } from './sistema/crud/crud.component';
+import { ContactoGBComponent } from './contacto-gb/contacto-gb.component';
+import { FooterGBComponent } from './footer-gb/footer-gb.component';
+import { HeaderGBComponent } from './header-gb/header-gb.component';
+import { InicioGBComponent } from './inicio-gb/inicio-gb.component';
+import { LoginGBComponent } from './login-gb/login-gb.component';
+import { OfertasGBComponent } from './ofertas-gb/ofertas-gb.component';
+import { ProductosGBComponent } from './productos-gb/productos-gb.component';
 
 const routes: Routes = [
-  {path:'', component: landingComponent},
-  {path:'servicios', component: ServiciosComponent},
-  {path:'precios', component: PreciosOfertasComponent},
-  {path:'contactos', component: ContactosComponent},
-  {path:'crud', component: CrudComponent}
+  { path: '', component: InicioGBComponent },
+  { path: 'inicio', component: InicioGBComponent },
+  { path: 'login', component: LoginGBComponent },
+  { path: 'contacto', component: ContactoGBComponent },
+  { path: 'ofertas', component: OfertasGBComponent },
+  { path: 'productos', component: ProductosGBComponent },
+  { path: 'header', component: HeaderGBComponent },
+  { path: 'footer', component: FooterGBComponent },
 ];
 
 @NgModule({
