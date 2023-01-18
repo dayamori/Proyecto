@@ -22,7 +22,7 @@ button:hover {
     color: #333;
     transition: all 0.3s ease-in-out;
 }
-img{
-    border-radius: 10px;
-    /*que los 4 img tengan el mismo tamaño*/    
-}
+body {
+    background-image: url(https://www.virachi.es/wp-content/uploads/2019/11/leaves.png);
+    line-height: 1.5;
+  }
