@@ -8,7 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { PreciosOfertasComponent } from './precios-ofertas/precios-ofertas.component';
-import { ContactosComponent } from './contactos/contactos.component';
 import { LoginComponent } from './login/login.component';
 import { CrudComponent } from './sistema/crud/crud.component';
 import { FooterComponent } from './footer/footer.component';
@@ -37,7 +36,6 @@ import { IonicModule } from '@ionic/angular';
     landingComponent,
     ServiciosComponent,
     PreciosOfertasComponent,
-    ContactosComponent,
     LoginComponent,
     CrudComponent,
     FooterComponent,
