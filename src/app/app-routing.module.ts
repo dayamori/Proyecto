@@ -12,7 +12,7 @@ const routes: Routes = [
   {path:'', component: landingComponent},
   {path:'servicios', component: ServiciosComponent},
   {path:'precios', component: PreciosOfertasComponent},
-  {path:'contactos', component: ContactosComponent},
+  {path:'contacto', component: ContactosComponent},
   {path:'crud', component: CrudComponent},
   {path:'productos', component: ProductosGBComponent},
   {path:'login', component: LoginComponent},

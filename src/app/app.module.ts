@@ -29,6 +29,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { landingComponent } from './Landing/landing.component';
 import { HeaderComponent } from './header/header.component';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { HeaderComponent } from './header/header.component';
     MatIconModule,
     MatCardModule,
     MatToolbarModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    IonicModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
