@@ -10,7 +10,9 @@
     padding: 5px; /* agrega un espacio alrededor */
     text-align: center;
   }
-  
+  body{
+    overflow: auto;
+  }
   .right-section {
     width: 50%; /* ocupa la mitad del ancho */
     margin-top: 5px;
